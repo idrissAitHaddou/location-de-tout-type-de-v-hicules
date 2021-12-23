@@ -1,0 +1,284 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+
+/* ----------------------- style of header ------------------------- */
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed;
+    top: Opx;
+    left: 0px;
+    z-index: 2222222222222222222;
+    background-color: #40A92F;
+}
+
+header .menu{
+    display: none;
+}
+header nav{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin: auto;
+}
+header nav ul li:hover{
+    color: white;
+    padding: 10px 14px;
+    background-color: rgb(46, 156, 74);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    padding-top: 30px;
+    margin-top: -27px;
+    padding-bottom: 35px;
+    transition: .5s;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+header nav ul a:hover{
+    color: white;
+}
+
+header div:last-child{
+    width: 15%;
+    padding: 10px 15px;
+}
+
+header div:last-child img{
+margin-top: 10px;
+}
+header div:last-child button{
+    float: right;
+    font-weight: bolder;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: none;
+    border: 1px solid white;
+}
+
+header div:last-child button:hover{
+    background-color: #40A92F;
+    color: white;
+    box-shadow: 2px 2px white,4px 4px #40A92F;
+    transition: .5s;
+}
+
+
+/* ----------------------- style of section 1 --------------------------- */
+
+main .section1{
+    width: 100%;
+    height:100vh;
+    background-color: #4E9F3D;
+    overflow: hidden;
+    align-items: center;
+
+}
+
+main .section1 .first{
+    width: 100%;
+    height: 50%;
+    background-color: white;
+} 
+
+main .section1 .ourLogin{
+    width: 60%;
+    height: 60%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 0px;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 4px green;
+}
+
+
+main .section1 .ourLogin div{
+    width: 48%;
+    display: block;
+    height: 100%;
+    align-items: center;
+}
+
+main .section1 .ourLogin .info{
+    width: 100%;
+    height: 25%;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    text-align: center;
+}
+main .section1 .ourLogin .info input{
+    width: 90%;
+    height: 50px;
+    border-radius: 20px;
+    outline: none;
+    order: none;
+    padding: 10px;
+    outline: none;
+    border: 1px solid green;
+    font-weight: bold;
+}
+main .section1 .ourLogin .info label{
+    float: left;
+    font-size: 22px;
+    margin-left: 27px;
+    padding-bottom: 10px;
+}
+
+main .section1 .ourLogin .message label{
+    float: left;
+    font-size: 22px;
+    padding-bottom: 10px;
+
+}
+
+main .section1 .ourLogin .message{
+    width: 100%;
+    height: 80%;
+    outline: none;
+    order: none;
+    padding: 10px;
+    overflow: hidden;
+}
+
+
+main .section1 .message textarea{
+    width: 90%;
+    height: 80%;
+    border-radius: 20px;
+    outline: none;
+    border: 1px solid green;
+    padding:10px 10px;
+    margin: auto;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.ourLogin .btnSendMessage{
+    width: 100%;
+    float: right;
+    text-align: center;
+    margin-right: 40px;
+}
+
+.ourLogin .btnSendMessage button{
+    float: right;
+    font-weight: bolder;
+    width: 150px;
+    padding: 20px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: none;
+    background-color: #40A92F;
+    float: right;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+.ourLogin .btnSendMessage button:hover{
+    background-color: #40A92F;
+    color: white;
+    box-shadow: 2px 2px white,4px 4px #40A92F;
+    transform: scale(1.2);
+    transition: .5s;
+
+}
+
+
+
+
+
+/* --------------------- view all infomation --------------------- */
+
+.model{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    background-color: rgba(210, 208, 212, 0.466);
+    display: none;
+}
+
+
+.allInfo{
+    width: 70%;
+    height: 300px;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    border: 1px solid green;
+    z-index: 22222222222222222222222222222222222222;
+    padding: 20px;
+    border-radius: 20px;
+}
+.clear h1{
+    width: auto;
+}
+
+.clear{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

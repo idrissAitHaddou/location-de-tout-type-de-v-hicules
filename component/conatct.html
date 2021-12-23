@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="stylesheet" href="../responsive/contact.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+
+       
+    
+      <!------------------ HEADER ------------------>
+
+      <header>
+        <div style="width: 15%;" class="logo">
+          <img src="../images/logoCar.png" style="float: right;" width="50" height="50" alt="">
+          <img onclick="Menu()" class="menu" src="../images/menuAndroid.svg" style="float: left;" width="50" height="50" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="#">Gallerie</a></li>
+                <li><a href="#">Réservation</a></li>
+                <li><a href="conatct.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/searchIcon.svg" alt="">
+            <button class="btnSignin">Sign in</button>
+        </div>
+    </header>
+
+
+    <!---------------------- MAIN ---------------------- -->
+
+    <main>
+        <!-- **--------------- section 1 -------------- -->
+        <section class="section1">
+          <div class="first"></div>
+          <div class="ourLogin">
+              <div>
+
+                  <div class="info">
+                    <label for="">Nom</label><br>
+                    <input required type="text" id="nom" placeholder="Nom">
+                  </div>
+
+                  <div class="info">
+                    <label for="">Email</label><br>
+                    <input required type="text" id="email" placeholder="Email">
+                  </div>
+
+                  <div class="info">
+                    <label for="">Sujet</label><br>
+                    <input required type="text" id="sujet" placeholder="Sujet">
+                  </div>
+                  
+              </div>
+              <div>
+                  <div class="message">
+                    <label for="">Message</label><br><br>
+                    <textarea required name="" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                  </div>
+                
+                  <div class="btnSendMessage">
+                    <button type="submit" onclick="clearModel(1)">Send</button>
+                  </div>
+                  
+            </div>
+              
+          </div>
+        </section>
+    </main>
+
+
+    <!-- ---------------- view all information ------------------- -->
+
+   
+
+    <div class="model">
+      <div class="allInfo">
+        <div class="clear">
+          <h1>Thank your for contact with us</h1>
+          <img src="../images/clear.svg" onclick="clearModel(0)" width="50" height="50" alt="">
+        </div>
+        <br><br><br>
+        <span>Email :<span class="Modelemail"> idrissaithadou@gmail.com</span><br><br>
+        <span>Nom : <span class="Modelnom"> idrissaithadou@gmail.com</span></span><br><br>
+        <span>Sujet : <span class="Modelsujet"> idrissaithadou@gmail.com</span></span><br><br>
+        <span>Message : <span class="Modelmessage"> idrissaithadou@gmail.com</span></span><br><br>
+      </div>
+    </div>
+
+
+
+    
+    <script src="../js/contact.js"></script>
+</body>
+</html>
