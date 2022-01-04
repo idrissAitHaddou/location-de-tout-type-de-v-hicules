@@ -74,7 +74,7 @@ function clearModel(vr)
             document.querySelector(".Modelmessage").textContent=document.querySelector("#message").value;
 
             document.querySelector("#title").style.fontSize="17px";
-            document.querySelector("#title").textContent="Thank your for contact with us";
+            document.querySelector("#title").textContent="Thank you for contact with us";
 
             document.querySelector(".Modelnom").parentNode.style.color="black";
             document.querySelector(".Modelemail").parentNode.style.color="black";
