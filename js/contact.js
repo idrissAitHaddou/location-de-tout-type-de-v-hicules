@@ -59,7 +59,7 @@ function clearModel(vr)
            || document.querySelector("#email").value==""
            || document.querySelector("#sujet").value==""
            || document.querySelector("#message").value==""){
-            document.querySelector("#title").textContent="les informations est vide !!!!";
+            document.querySelector("#title").textContent="les informations sont vide !!!!";
             document.querySelector("#title").style.fontSize="17px";
             document.querySelector(".model").style.display="block";
             document.querySelector(".Modelnom").parentNode.style.color="red";
