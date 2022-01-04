@@ -4,9 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="descritpion" content="Ce brief project consiste sur la création d'un siteweb pour une agence de location de tout type de véhicules">
+    <meta name="keywords" content="cars,brief,la création d'un siteweb pour une agence,tout type de véhicules,véhicules">
+
+    <link rel="stylesheet" href="../css/reservation.css">
+    <link rel="stylesheet" href="../responsive/reservation.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    
+    <title>Réservation</title>
 </head>
 <body>
+
+
+       
     
+      <!------------------ HEADER ------------------>
+
+      <header>
+        <div style="width: 15%;" class="logo">
+          <img src="../images/logoCar.png" style="float: right;" width="50" height="50" alt="">
+          <img onclick="Menu()" class="menu" src="../images/menuAndroid.svg" style="float: left;" width="50" height="50" alt="">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="Gallerie.html">Gallerie</a></li>
+                <li><a href="Réservation.html" style="border-bottom: 1px solid green;padding: 0px 2px 2px 2px;">Réservation</a></li>
+                <li><a href="conatct.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div>
+            <img src="images/searchIcon.svg" alt="">
+            <button class="btnSignin">Sign in</button>
+        </div>
+    </header>
+
+
+    <!---------------------- MAIN ---------------------- -->
+
+    <main>
+        <!-- **--------------- section 1 -------------- -->
+        <section class="section1">
+          <div class="first"></div>
+          <div class="ourLogin">
+              <div>
+                 
+                  <div class="info">
+                    <label for="">Boite à vitesse</label><br>
+                    <select name="" id="vitesse">
+                        <option value="" selected disabled>select votre Boite à vitesse</option>
+                        <option value="manuelle">Manuelle</option>
+                        <option value="automatique">Automatique</option>
+                        <option value="autre">Autre</option>
+                    </select>
+                  </div>
+
+                  <div class="info">
+                    <label for="">Type</label><br>
+                    <select name="" id="type" disabled>
+                      
+                    </select>
+                  </div>
+
+                  <div class="info">
+                    <label for="">Carburant</label><br>
+                    <select name="" id="carburant" disabled>
+                      
+                    </select>
+                  </div>
+                  
+              </div>
+              <div>
+                  <div class="message">
+                    <label for="">durée de réservation</label><br><br>
+                    <input type="number" min="1" value="0" id="duree" required disabled>
+                    <br><br>
+                    <p id="showErrors"></p>
+                    <div class="btnSendMessage">
+                        <br><br>
+                        <button type="submit" id="btnSubmit" onclick="reserver()">reserver</button>
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+        </section>
+    </main>
+
+
+      <!-- ---------------- view all information ------------------- -->
+
+   
+
+      <div class="model">
+        <div class="allInfo">
+          <div class="clear">
+            <span>merci pour votre reservation</span>
+            <img src="../images/clear.svg" style="cursor: pointer;" onclick="hideModel()" width="50" height="50" alt="">
+          </div>
+          <div class="itsValidate">
+            <img id="imgValidate" src="../images/validate.gif" alt="">
+          </div>
+        </div>
+      </div>
+  
+
+
+    
+    <script src="../js/reservation.js"></script>
 </body>
 </html>

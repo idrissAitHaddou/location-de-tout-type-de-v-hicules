@@ -7,6 +7,7 @@ window.onload=function(){
     }
 }
 
+
 // **--------------------- WHEN WINDOW SCROLLING ---------------------------
 
 window.addEventListener("scroll",function(){

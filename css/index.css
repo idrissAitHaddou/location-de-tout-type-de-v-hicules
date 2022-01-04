@@ -46,6 +46,7 @@ header nav ul li:hover{
     color: white;
     padding: 10px 14px;
     background-color: rgb(46, 156, 74);
+    outline: none;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     height: 50px;
@@ -171,7 +172,7 @@ header div:last-child button:hover{
 
 
 .section2{
-    width: 100%;
+width: 100%;
    padding: 20px;
    height: auto;
    margin-top: 20px;
@@ -188,29 +189,32 @@ header div:last-child button:hover{
 .section2 .find{
     width: 70%;
     margin: auto;
-    height: 200px;
+    height: auto;
     border: 1px solid rgb(228, 216, 216);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-top: 40px;
-    padding-left: 20px;
-    position: relative;
+    padding: 15px;
+    display: flex;
+    flex-wrap: wrap;
 
 }
 
 .findCar{
-    width: 200px;
-    position: absolute;
-    top: 30%;
-    right: 5%;
+   width: 20%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
 }
 
-.findCar button{
-    padding: 30px 60px;
+ .findCar button{
+    width: 200px;
+    height: 60px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-image: url("../images/searchIcon.svg");
     background-repeat: no-repeat;
     background-size: 17%;
-    background-position: 10px;
+    background-position: 3%;
     font-size: 20px;
     white-space: nowrap;
     border: 1px solid rgb(228, 216, 216);
@@ -218,51 +222,29 @@ header div:last-child button:hover{
     background-color: #40A92F;
     color: white;
     font-weight: bolder;
-}
-.findCar button:hover{
-background-color: #40A92F;
-color: white;
-box-shadow: 2px 2px white,4px 4px #40A92F;
-transform: scale(1.1);
-transition: .5s;
+    align-self: center;
+    margin-right: 30px;
 }
 
 
-/** -------------- first style div of les selection ------------------ */
 
-.section2 .find div:first-child{
-    width: 70%;
-    display: flex;
-    margin-bottom: 20px;
+/** -------------- style div of les selection ------------------ */
 
+ .section2 .find div:first-child{
+    width: 80%;
+    display: inline-block;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-.section2 .find div:first-child div{
-    width: 100%;
-    justify-content: space-around;
-    margin-top: 20px;
-}
-.section2 .find div:first-child div select{
+
+.section2 .find div:first-child select{
    padding: 10px 30px;
-   margin-top: 9%;
+   margin-top: 20px;
    border-radius: 20px;
    border: 1px solid rgb(228, 216, 216);
-}
+   flex-grow: 3;
+} 
 
-/** -------------- second style div of les selection ------------------ */
-
-.section2 .find .secondSe{
-    width: 70%;
-    display: flex;
-}
-.section2 .find .secondSe div{
-    width: 100%;
-    justify-content: space-around;
-}
-.section2 .find .secondSe div select{
-   padding: 10px 30px;
-   border-radius: 20px;
-   border: 1px solid rgb(228, 216, 216);
-}
 
 
 
@@ -372,44 +354,12 @@ transition: .5s;
     text-align: center;
 }
 
-.section4 .Premiume{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
 
-.section4 .Premiume h3{
-    width: 20%;
-    text-align: right;
-    margin-top: 10px;
-}
-
-.section4 .Premiume div{
-    display: flex;
-    width:35% ;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.section4 .Premiume button{
-    padding: 10px 30px;
-    background-color: white;
-    outline: none;
-    border:1px solid  #40A92F;
-    color: #40A92F;
-    border-radius: 10px;
-}
-
-.section4 .Premiume button:hover{
-    font-size: 12px;
-    transition: .5s;
-}
 
 .section4 .series1{
     display: flex;
     width: 100%;
     justify-content: space-around;
-    overflow: hidden;
     padding: 0px 20px;
     margin-top: 50px;
 }
@@ -420,6 +370,9 @@ transition: .5s;
     border-radius: 10px;
     height: 400px;
     overflow: hidden;
+}
+.section4 .series1 .cardSerie:hover{
+    box-shadow: 1px 1px 7px gray;
 }
 .section4 .serie{
     width: 100%;
@@ -433,9 +386,19 @@ transition: .5s;
 }
 
 .section4 .imgSerie{
-    width: 100%;
+    width: 60% !important;
     height: 60%;
+    margin: auto;
 }
+.section4 .imgSerie img{
+    width: 100%;
+    height:70%;
+    margin-top: 60px;
+    
+}
+
+
+
 
 .section4 .serie div:first-child{
     display: grid;
@@ -457,15 +420,24 @@ transition: .5s;
 }
 
 .section4 .serie div:first-child p button{
-    background-color: #40A92F;
+    background-color: #49e431;
     outline: none;
     border: none;
     border-radius: 10px;
     padding: 15px;
+    color: white;
+}
+.section4 .serie div:first-child p button:hover{
+    border:1px solid #40A92F;
+    background-color: white;
+    padding: 15px;
+    font-weight: bolder;
+    color: #49e431;
 }
 
 .section4 .serie div:last-child{
-    border: 1px solid gray;
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
     border-bottom-left-radius: 10px;
 }
 
@@ -476,7 +448,6 @@ transition: .5s;
     margin-top: 10px;
 }
 .section4 .serie div:last-child p button{
-    /* background-image: url("../images/dollar.svg"); */
     background-image: url("../images/iconsSettings.png");
     background-position: center;
     background-size: cover;
@@ -489,14 +460,7 @@ transition: .5s;
     filter: saturate(0.1);
 }
 
-.section4 .imgSerie img{
-    width: 70%;
-    height: 70%;
-    margin-top: 30px;
-   margin-left: 70px;
-   transform: scale(1.7);
-    
-}
+
 
 
 

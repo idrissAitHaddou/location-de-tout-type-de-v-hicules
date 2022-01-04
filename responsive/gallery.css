@@ -1,6 +1,5 @@
 
 
-
 /* ------------------ responsive of header max width 780 px ------------------- */
 
 
@@ -78,95 +77,6 @@
 
 
 
-/* ---------------------------- responsive of section 1  ------------------------ */
-
-
-
-
-    
-.section1{
-    width: 100%;
-    height: 630px;
-    overflow: hidden;
-    position: relative;
-}
-.section1 img:first-child{
-  display: none;
-}
-
-.section1 .mainS{
-    width: 100%;
-    height: auto;
-    display: inline-block;
-    overflow: hidden;
-}
-.section1 .mainS div{
-    width: 100%;
-}
-
-.section1 .mainS div p{
-    font-size: 16px;
-}
-
-
-
-
-.section1 .mainS img{
-    width: 100%;
-    height: 98%;
-    transform: scale(1.3);
-}
-
-
-
-/* ----------------------- style of section 3 ------------------------- */
-
-.section3{
-    width: 100%;
-    height: auto;
-    background-color: #F7F7F7;
-    margin-bottom: 100px;
-    padding:20px 0px;
-}
-
-.section3 h1{
-    width: 100%;
-    text-align: center;
-    font-size: 40px;
-}
-
-.section3 .works{
-    width: 90%;
-    margin: auto;
-    margin-bottom: -120px !important;
-    white-space: nowrap;
-}
-
-.section3 .works h1{
-    font-size: 17px;
-}
-
-.section3 .works div:first-child{
-    display: flex;
-    width: 100%;
-    margin-bottom: 130px;
-}
-
-
-
-.section3 .works .lastWork div{
-    display: block;
-}
-
-
-
-.section3 .works button{
-    margin: 2px 33%;
-}
-
-
-
-
 
 
 
@@ -191,6 +101,30 @@
     white-space: nowrap;
 }
 
+ .section4 .Premiume{
+    width: 100%;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.section4 .Premiume h3{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    white-space: nowrap;
+    margin-bottom: 20px;
+    
+}
+
+.section4 .Premiume div{
+    width: 80%;
+    height: auto;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+
+
 .section4 .series1{
     display: inline-block;
     width: 100%;
@@ -208,14 +142,25 @@
     margin: auto;
     margin-bottom: 10px;
 }
+.section4 .series1 .cardSerie:hover{
+    box-shadow: 1px 1px 7px gray;
+}
 
 
 .section4 .serie div:first-child p button{
-    background-color: #40A92F;
+    background-color: #49e431;
     outline: none;
     border: none;
     border-radius: 10px;
-    padding: 10px;
+    padding: 15px;
+    color: white;
+}
+.section4 .serie div:first-child p button:hover{
+    border:1px solid #40A92F;
+    background-color: white;
+    padding: 15px;
+    font-weight: bolder;
+    color: #49e431;
 }
 
 
@@ -227,6 +172,12 @@
 
 
 
+
+
+
+
+
+    
 /* ------------------------ strat style of footer --------------------------------- */
 
 
@@ -357,15 +308,8 @@ footer .toUp button{
 
 
 
-
-
-
-
-
-
-
-
 }
+
 
 
 
@@ -472,171 +416,14 @@ footer .toUp button{
     }
     
     
-    
-    /* ----------------------- style of section 1 ------------------------- */
-    
-    .section1{
-        width: 100%;
-        height: 630px;
-        overflow: hidden;
-        position: relative;
-    }
-    .section1 img{
-      width: 100%;
-      height: 1300px;
-      z-index: 1;
-    }
-    
-    .section1 .mainS{
-        width: 100%;
-        height: 500px;
-        position: absolute;
-        top: 9%;
-        left: 0px;
-        display: flex;
-    }
-    .section1 .mainS div{
-        width: 50%;
-        height: 100%;
-        display: inline-block;
-        margin-top: 8%;
-    }
-    
-    .section1 .mainS div p{
-        width: 60%;
-        margin: auto;
-        font-size: 18px;
-        margin-top: 10px;
-        font-weight: 1000;
-        white-space: nowrap;
-    }
-    
-    
-    .section1 .mainS div p span{
-     color: #3AA628;
-    }
-    
-    .section1 .mainS div button{
-        margin: auto;
-        padding: 16px 80px;
-        text-align: center;
-        white-space: nowrap;
-        margin-left: 20%;
-        border-radius: 20px;
-        border: 1px solid #40A92F;
-        outline: none;
-        background: none;
-        font-weight: bolder;
-        font-size: 20px;
-    }
-    
-    .section1 .mainS div button:hover{
-        background-color: #40A92F;
-        color: white;
-        transform: scale(1.1);
-        box-shadow: 2px 2px white,4px 4px #40A92F;
-        transition: .5s;
-    }
-    
-    .section1 .mainS img{
-        width: 50%;
-        height: 98%;
-        transform: scale(1.5);
-    }
-    
- 
-    /* ----------------------- style of section 3 ------------------------- */
-    
-    .section3{
-        width: 100%;
-        height: auto;
-        background-color: #F7F7F7;
-        margin-bottom: 100px;
-        padding:20px 0px;
-    }
-    
-    .section3 h1{
-        width: 100%;
-        text-align: center;
-        font-size: 40px;
-    }
-    
-    .section3 .works{
-        width: 90%;
-        margin: auto;
-        margin-bottom: -120px !important;
-        white-space: nowrap;
-    }
-    
-    .section3 .works h1{
-        font-size: 20px;
-    }
-    
-    .section3 .works div:first-child{
-        display: flex;
-        width: 90%;
-        margin: auto;
-        margin-top: 60px;
-        margin-bottom: 150px;
-    }
-    .section3 .works div:first-child div{
-        width: 50%;
-        margin: auto;
-        display: block;
-    }
-    .section3 .works .lastWork{
-        width: 50%;
-        margin: auto;
-    }
-    
-    .section3 .works .lastWork div{
-        display: block;
-    }
-    
-    .section3 .works h1{
-        width: 100%;
-        text-align: center;
-    }
-    
-    .section3 .works button{
-        width: 70px;
-        height: 70px;
-        border-radius: 10px;
-        margin: 2px 43%;
-        border: 1px solid #40A92F;
-        box-shadow: 0px 0px 6px rgb(160, 155, 155);
-        margin-bottom: 20px;
-    }
-    
-    .section3 .works .btn1{
-        background-image: url("../images/position.svg");
-        background-position: center;
-        background-size: 70%;
-        background-repeat: no-repeat;
-    }
-    
-    .section3 .works .btn2{
-        background-image: url("../images/book.svg");
-        background-position: center;
-        background-size: 70%;
-        background-repeat: no-repeat;
-    }
-    
-    .section3 .works .btn3{
-        background-image: url("../images/dollar.svg");
-        background-position: center;
-        background-size: 70%;
-        background-repeat: no-repeat;
-    }
-    
-    
-    .section3 .works P{
-        width: 100%;
-        text-align: center;
-    }
-    
-    
-    
+
+
+
+
+
+
+
+
     /* ----------------------- style of section 4 ------------------------- */
     
     .section4{
@@ -650,8 +437,28 @@ footer .toUp button{
         width: 100%;
         text-align: center;
     }
-     
-  
+    
+    .section4 .Premiume{
+        width: 100%;
+        display: inline-block;
+        justify-content: space-around;
+    }
+    
+    .section4 .Premiume h3{
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        white-space: nowrap;
+        margin-bottom: 20px;
+        
+    }
+    
+    .section4 .Premiume div{
+        width: 80%;
+        height: auto;
+        padding: 0px 20px;
+        margin: auto;
+    }
     
     .section4 .series1{
         display: inline-block;
@@ -670,6 +477,9 @@ footer .toUp button{
         margin: auto;
         margin-bottom: 20px;
     }
+    .section4 .series1 .cardSerie:hover{
+        box-shadow: 1px 1px 7px gray;
+    }
     .section4 .serie{
         width: 100%;
         height: 40%;
@@ -680,8 +490,7 @@ footer .toUp button{
         width: 50%;
         height: 100%;
     }
-    
-   
+
     
     .section4 .serie div:first-child{
         display: grid;
@@ -703,13 +512,27 @@ footer .toUp button{
     }
     
     .section4 .serie div:first-child p button{
-        background-color: #40A92F;
+        background-color: #49e431;
         outline: none;
         border: none;
         border-radius: 10px;
         padding: 15px;
+        color: white;
     }
-
+    .section4 .serie div:first-child p button:hover{
+        border:1px solid #40A92F;
+        background-color: white;
+        padding: 15px;
+        font-weight: bolder;
+        color: #49e431;
+    }
+    
+    .section4 .serie div:last-child{
+        border-left: 1px solid gray;
+        border-bottom: 1px solid gray;
+        border-bottom-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
     
     .section4 .serie div:last-child p{
         width: 100%;
@@ -718,7 +541,6 @@ footer .toUp button{
         margin-top: 10px;
     }
     .section4 .serie div:last-child p button{
-        background-image: url("../images/dollar.svg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -729,9 +551,19 @@ footer .toUp button{
         border-radius: 50%;
     }
     
+    /* .section4 .imgSerie img{
+        width: 100px;
+        height:100px;
+        margin-top: 60px;
+       margin-left: 100px;
+       transform: scale(1.7);
+      
+        
+    } */
     
     
-    
+
+ 
     
     /* ------------------------ strat style of footer --------------------------------- */
     
@@ -859,42 +691,5 @@ footer .toUp button{
 
 
 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

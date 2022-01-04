@@ -1,0 +1,451 @@
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+
+/* ----------------------- style of header ------------------------- */
+
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    position: fixed;
+    top: Opx;
+    left: 0px;
+    z-index: 2222222222222222222;
+}
+
+header .menu{
+    display: none;
+}
+header nav{
+    display: flex;
+    width: 60%;
+    align-items: center;
+}
+header nav ul{
+    display: flex;
+    width: 60%;
+    margin: auto;
+}
+
+header nav ul li{
+    list-style-type: none;
+    margin: auto;
+}
+header nav ul li:hover{
+    color: white;
+    padding: 10px 14px;
+    background-color: rgb(46, 156, 74);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    height: 50px;
+    padding-top: 30px;
+    margin-top: -27px;
+    padding-bottom: 35px;
+    transition: .5s;
+}
+
+header nav ul a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+
+header nav ul a:hover{
+    color: white;
+}
+
+header div:last-child{
+    width: 15%;
+    padding: 10px 15px;
+}
+
+header div:last-child img{
+margin-top: 10px;
+}
+header div:last-child button{
+    float: right;
+    font-weight: bolder;
+    width: 100px;
+    padding: 10px;
+    border-radius: 20px;
+    margin-right: 10px;
+    background: none;
+    border: 1px solid #40A92F;
+}
+
+header div:last-child button:hover{
+    background-color: #40A92F;
+    color: white;
+    box-shadow: 2px 2px white,4px 4px #40A92F;
+    transition: .5s;
+}
+
+
+
+
+
+/** ------------------------ strat style of main --------------------------------- **/
+
+/* ----------------------- style of section background ------------------------- */
+
+.sectionbg{
+width: 100%;
+height: 500px;
+position: relative;
+background-image: url("../images/bgGalllery.jpg");
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+background-color: rosybrown;
+}
+
+.sectionbg div{
+    width: 50%;
+    height: 200px;
+    margin: auto;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,50%);
+    padding: 20px;
+}
+.sectionbg div h1,.sectionbg div p{
+    width: 100%;
+    text-align: center;
+    height: auto;
+    color: white;
+}
+.sectionbg div h1{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+.sectionbg div p{
+    font-size: 22px;
+}
+
+
+.sectionbg div button{
+    color: white;
+    padding: 16px 60px;
+    text-align: center;
+    white-space: nowrap;
+    margin: auto;
+    border-radius: 20px;
+    outline: none;
+    background: none;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.sectionbg div button:hover{
+    color: white;
+    transform: scale(1.1);
+    box-shadow: 2px 2px #40A92F,4px 4px white;
+    transition: .5s;
+}
+
+
+
+
+
+
+/* ----------------------- style of section 4 ------------------------- */
+
+.section4{
+    width: 100%;
+    height: auto;
+    margin-bottom: 70px;
+}
+
+
+.section4 h1,.section4 p{
+    width: 100%;
+    text-align: center;
+}
+.section4 h1{
+    font-size: 40px;
+    margin-top: 50px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+
+
+.section4 .Premiume{
+    width: 100%;
+    display: flex;
+}
+
+.section4 .Premiume h3{
+    width: 20%;
+    text-align: right;
+    margin-top: 10px;
+    margin-top: 15px;
+}
+
+.section4 .Premiume div{
+    width: 80%;
+    height: auto;
+    padding: 0px 20px;
+}
+
+.section4 .Premiume div button{
+    padding: 10px 30px;
+    background-color: white;
+    outline: none;
+    border:1px solid  #40A92F;
+    color: #40A92F;
+    border-radius: 10px;
+    white-space:nowrap;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.section4 .Premiume button:hover{
+    font-size: 12px;
+    transition: .5s;
+}
+
+
+
+.section4 .series1{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0px 20px;
+    margin-top: 50px;
+}
+
+.section4 .series1 .cardSerie{
+    width: 25%;
+    border:1px solid gray;
+    border-radius: 10px;
+    height: 400px;
+    overflow: hidden;
+  
+
+}
+.section4 .series1 .cardSerie:hover{
+    box-shadow: 1px 1px 7px gray;
+}
+.section4 .serie{
+    width: 100%;
+    height: 40%;
+    display: flex;
+}
+
+.section4 .serie div{
+    width: 50%;
+    height: 100%;
+}
+
+.section4 .imgSerie{
+    width: 60% !important;
+    height: 60%;
+    margin: auto;
+}
+.section4 .imgSerie img{
+    width: 100%;
+    height:70%;
+    margin-top: 60px;
+    
+}
+
+
+.section4 .serie div:first-child{
+    display: grid;
+}
+
+.section4 .serie div:first-child button{
+    width: 100px;
+    padding: 10px 0px;
+    margin: auto;
+    margin-top: 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+
+}
+
+
+.section4 .serie div:first-child p{
+    margin-top: 40px;
+}
+
+.section4 .serie div:first-child p button{
+    background-color: #49e431;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    color: white;
+}
+.section4 .serie div:first-child p button:hover{
+    border:1px solid #40A92F;
+    background-color: white;
+    padding: 15px;
+    font-weight: bolder;
+    color: #49e431;
+}
+
+.section4 .serie div:last-child{
+    border-left: 1px solid gray;
+    border-bottom: 1px solid gray;
+    border-bottom-left-radius: 10px;
+}
+
+.section4 .serie div:last-child p{
+    width: 100%;
+    text-align: left;
+    padding-left: 5px;
+    margin-top: 10px;
+}
+.section4 .serie div:last-child p button{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    outline: none;
+    border: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    filter: saturate(0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------ strat style of footer --------------------------------- */
+
+
+footer{
+    width: 100%;
+    border: 1px solid rgb(230, 225, 225);
+    padding-top: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+footer .allLinks{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+
+footer .allLinks div{
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+footer .allLinks div a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+footer hr{
+    width: 40%;
+    background-color: #F1EFEF;
+    margin: 50px auto;
+}
+
+
+footer .dowContenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    height: 40%;
+    margin-bottom: 50px;
+}
+
+footer .dowContenu div{
+    width:40%;
+    text-align: center;
+}
+footer .dowContenu div img{
+    width: 100px;
+    height: 100px;
+}
+
+
+footer .iconsNetwork{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+footer .iconsNetwork img{
+    width: 40px  !important;
+    height: 40px !important;
+    border-radius: 50%;
+
+} 
+
+footer .footerNewsLetter{
+display: flex;
+align-items: center;
+text-align: left;
+}
+footer .footerNewsLetter h2{
+    margin-left: 100px;
+}
+footer .footerNewsLetter button{
+    width: 50%;
+    height: 70px;
+    background-image: url("../images/toRight.svg");
+    background-position: right;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 15px;
+    margin-left: 5px;
+}
+
+footer .toUp{
+    width: 100%;
+    text-align: center;
+}
+
+footer .toUp button{
+    margin: auto;
+    background-color: #40A92F;
+    height: 140px;
+    width: 140px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transform: scale(1.7);
+    border: none;
+    outline: none;
+    position: absolute;
+    bottom: -130px;
+    background-image: url("../images/tuUpHome.svg");
+    background-position: top;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
